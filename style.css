@@ -1,0 +1,489 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 12vh;
+    align-items: center;
+}
+
+.logocontainer,.nav-links,.cart{
+    display: flex;
+}
+
+.logo{
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.logocontainer{
+    flex: 2;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    list-style: none;
+    
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.sign{
+    font-size: 25px;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    border: 3px solid black;
+    background: transparent;
+    margin: 15px;
+    
+}
+
+.btn{
+    margin: 20px;
+}
+
+/* main */
+
+.presentation{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(39, 29, 29);
+}
+
+.intro-text p {
+    margin-top: 1px;
+    font-size: 50px;
+    color: #585772;
+}
+
+.cta{
+    padding-top: 30px;
+}
+
+.cta-select {
+    border: 3px solid black;
+    background: transparent;
+    color: black;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.cta-add{
+    border: none;
+    background: rgb(63, 55, 55);
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+
+.cover{
+    flex: 1;
+}
+
+.gabung{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cover img{
+    height: 55vh;
+    filter: drop-shadow( 0px 5px 3px black);
+    animation: drop 1.5s ease;
+    margin-bottom: 20px;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.big-circle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity:0.7;
+    height: 80%;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 60%;
+}
+
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+
+/* NEW ARRIVAL */
+
+.description{
+    margin: auto;
+    background: linear-gradient(#525252, #131313);
+    height: 625px; 
+} 
+
+.information p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.information p:after {
+    content: '';
+    width: 150px;
+    height: 2px;
+    bottom: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.information p, .information p:after {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NA-prd {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.pic1 a img, .pic2 a img, .pic3 a img, .pic4 a img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.NA-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.NA-more a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 2px 20px;
+    border-style: none;
+    border-radius: 30px;
+}
+
+.NA-more a:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+    transition: all 0.65s ease;
+}
+
+/* ADVANTAGES */
+.advantages {
+    margin: auto;
+    background:white;
+    height: 500px;
+}
+
+.advantages-title {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px
+}
+
+.advantages-title p:after {
+    content: '';
+    width: 150px;
+    height: 2px;
+    bottom: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages-title p, .advantages-title p:after {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.advantages-main {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+
+}
+
+    .advantages-main-delivery img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .advantages-main-deal img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .advantages-main-cheap img{
+        height: 300px;
+        width: 300px;
+    }
+
+
+
+/*CONTACT US*/
+
+.contactus-text{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: white;
+    padding-top: 120px;
+}
+
+.contact-us{
+    background: url(images/building2.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+}
+
+/*DETAIL*/
+.contact-group{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.contact{
+    flex: 1;
+}
+
+.contact-details{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-desc{
+    padding-top: 10px;
+}
+
+/*ADDRESS*/
+.contact-address{
+    display: flex;
+    padding-top: 10px;
+}
+
+.text-address{
+    display: flex;
+    padding-left: 10px;
+}
+
+.address{
+    font-weight: 600;
+}
+
+.address-text{
+    padding-left: 15px;
+}
+
+/*PHONE*/
+.contact-phone{
+    display: flex;
+    padding-top: 10px;
+}
+
+.text-phone{
+    display: flex;
+    padding-left: 10px;
+}
+
+.phone{
+    font-weight: 600;
+}
+
+.phone-number{
+    padding-left: 30px;
+}
+
+/*EMAIL*/
+.contact-email{
+    display: flex;
+    padding-top: 10px;
+}
+
+.text-email{
+    display: flex;
+    padding-left: 10px;
+}
+
+.email{
+    font-weight: 600;
+}
+
+.email-text{
+    padding-left: 28px;
+}
+
+/*WEB*/
+.contact-web{
+    display: flex;
+    padding-top: 10px;
+}
+
+.text-web{
+    display: flex;
+    padding-left: 10px;
+}
+
+.web{
+    font-weight: 600;
+}
+
+.web-text{
+    padding-left: 44px;
+}
+
+
+/*FORM*/
+
+.contact-form{
+    flex: 1;
+    padding-left: 30px;
+    
+}
+
+.text-contactform{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.form{
+    padding-top: 10px;
+    display: flex;
+}
+
+.form-name p{
+    font-weight: 600;
+}
+
+.form-email{
+    padding-left: 25px;
+}
+
+.form-email p{
+    font-weight: 600;
+}
+
+.form-message{
+    padding-top: 10px;
+}
+
+.form-message p{
+    font-weight: 600;
+}
+
+.form-send{
+    width:100px;
+    height: 25px;
+    border: none;
+    background: rgb(65, 65, 207);
+    color: white;
+    cursor: pointer;
+}
+
+.send{
+    padding-top: 10px;
+}
+
+/*MAP*/
+
+
+
+
+
+
+
+
+
+
+
+
